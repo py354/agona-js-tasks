@@ -22,7 +22,7 @@ console.log("1:", capitalize("test  t"));
 
 // 2 задача
 function clear(str) {
-    return str.split(/[^a-z0-9]/i).join('')
+    return str.split(/[^a-z0-9а-я]/i).join('')
 }
 
 console.log("2:", clear("12312 \d \n \t word"))
@@ -42,7 +42,7 @@ function isPalindrome(str) {
 }
 
 console.log("3:", isPalindrome("123"), isPalindrome("1234"), isPalindrome("121"), isPalindrome("1221"))
-console.log("3:", isPalindrome("А роза упала на лапу Азора."), isPalindrome("Бел хлеб."))
+console.log("3:", isPalindrome("А роза упала на лапу Азора."), isPalindrome("Бел хлеб."), isPalindrome("Не палиндром"))
 
 
 // 4 задача
