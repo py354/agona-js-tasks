@@ -52,8 +52,6 @@ console.log(find(1, [1, 2, 3, 5]))
 
 
 // 5 задача
-
-// функция для слияния двух отсортированных массивов
 function mergeSort(arr) {
     if (arr.length <= 1) {
         return arr;
@@ -65,6 +63,7 @@ function mergeSort(arr) {
     return merge(mergeSort(arr1), mergeSort(arr2))
 }
 
+// функция для слияния двух отсортированных массивов
 function merge(arr1, arr2) {
     let i = 0;
     let j = 0;
