@@ -22,7 +22,7 @@ console.log("1:", capitalize("test  t"));
 
 // 2 задача
 function clear(str) {
-    return str.split(/[^a-z0-9а-я]/i).join('')
+    return str.replaceAll(/[^a-z0-9а-я]/ig, '')
 }
 
 console.log("2:", clear("12312 \d \n \t word"))
