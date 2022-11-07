@@ -46,13 +46,10 @@ input {
     position: relative;
 }
 
-.password-row:after {
+img {
     position: relative;
     left: 90%;
     top: -75%;
-    content: url("Eye Hide.svg");
-    width: 24px;
-    height: 24px;
 }
 
 button {
