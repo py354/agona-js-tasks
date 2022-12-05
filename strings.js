@@ -22,7 +22,13 @@ console.log("1:", capitalize("test  t"));
 
 // 2 задача
 function clear(str) {
-    return str.replaceAll(/[^a-z0-9а-я]/ig, '')
+    const isSymbol = char => {
+        const code = char.charCodeAt(0);
+        return !(code < 48 || (code > 57 && code < 65) || (code > 90 && code < 97) || (code > 122 && code < 128))
+
+    }
+
+    return str.split('').filter(isSymbol).join('');
 }
 
 console.log("2:", clear("12312 \d \n \t word"))
